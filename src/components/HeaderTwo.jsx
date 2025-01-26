@@ -62,32 +62,32 @@ const HeaderTwo = ({ category }) => {
 
   return (
     <>
-      <div className='overlay' />
+      <div className="overlay" />
       <div
         className={`side-overlay ${(menuActive || activeCategory) && "show"}`}
       />
       {/* ==================== Search Box Start Here ==================== */}
 
-      <form action='#' className={`search-box ${activeSearch && "active"}`}>
+      <form action="#" className={`search-box ${activeSearch && "active"}`}>
         <button
           onClick={handleSearchToggle}
-          type='button'
-          className='search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1'
+          type="button"
+          className="search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1"
         >
-          <i className='ph ph-x' />
+          <i className="ph ph-x" />
         </button>
-        <div className='container'>
-          <div className='position-relative'>
+        <div className="container">
+          <div className="position-relative">
             <input
-              type='text'
-              className='form-control py-16 px-24 text-xl rounded-pill pe-64'
-              placeholder='Search for a product or brand'
+              type="text"
+              className="form-control py-16 px-24 text-xl rounded-pill pe-64"
+              placeholder="Search for a product or brand"
             />
             <button
-              type='submit'
-              className='w-48 h-48 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'
+              type="submit"
+              className="w-48 h-48 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"
             >
-              <i className='ph ph-magnifying-glass' />
+              <i className="ph ph-magnifying-glass" />
             </button>
           </div>
         </div>
@@ -104,25 +104,25 @@ const HeaderTwo = ({ category }) => {
             handleMenuToggle();
             setActiveIndex(null);
           }}
-          type='button'
-          className='close-button'
+          type="button"
+          className="close-button"
         >
-          <i className='ph ph-x' />{" "}
+          <i className="ph ph-x" />{" "}
         </button>
-        <div className='mobile-menu__inner'>
-          <Link to='/' className='mobile-menu__logo'>
-            <img src='assets/images/logo/logo.png' alt='Logo' />
+        <div className="mobile-menu__inner">
+          <Link to="/" className="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo" />
           </Link>
-          <div className='mobile-menu__menu'>
+          <div className="mobile-menu__menu">
             {/* Nav Menu Start */}
-            <ul className='nav-menu flex-align nav-menu--mobile'>
+            <ul className="nav-menu flex-align nav-menu--mobile">
               <li
                 onClick={() => handleMenuClick(0)}
                 className={`on-hover-item nav-menu__item has-submenu ${
                   activeIndex === 0 ? "d-block" : ""
                 }`}
               >
-                <Link to='#' className='nav-menu__link'>
+                <Link to="#" className="nav-menu__link">
                   Home
                 </Link>
                 <ul
@@ -130,31 +130,31 @@ const HeaderTwo = ({ category }) => {
                     activeIndex === 0 ? "open" : ""
                   }`}
                 >
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Home Grocery
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/index-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/index-two"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Home Electronics
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/index-three'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/index-three"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Home Fashion
@@ -168,7 +168,7 @@ const HeaderTwo = ({ category }) => {
                   activeIndex === 1 ? "d-block" : ""
                 }`}
               >
-                <Link to='#' className='nav-menu__link'>
+                <Link to="#" className="nav-menu__link">
                   Shop
                 </Link>
                 <ul
@@ -176,31 +176,31 @@ const HeaderTwo = ({ category }) => {
                     activeIndex === 1 ? "open" : ""
                   }`}
                 >
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/shop'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/shop"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Shop
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/product-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/product-details"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Shop Details
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/product-details-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/product-details-two"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Shop Details Two
@@ -214,10 +214,10 @@ const HeaderTwo = ({ category }) => {
                   activeIndex === 2 ? "d-block" : ""
                 }`}
               >
-                <span className='badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4'>
+                <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                   New
                 </span>
-                <Link to='#' className='nav-menu__link'>
+                <Link to="#" className="nav-menu__link">
                   Pages
                 </Link>
                 <ul
@@ -225,48 +225,48 @@ const HeaderTwo = ({ category }) => {
                     activeIndex === 2 ? "open" : ""
                   }`}
                 >
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/cart'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/cart"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       {" "}
                       Cart
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/wishlist'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/wishlist"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Wishlist
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/checkout'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/checkout"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Checkout
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/become-seller'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/become-seller"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Become Seller
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/account'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/account"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Account
                     </Link>
@@ -279,10 +279,10 @@ const HeaderTwo = ({ category }) => {
                   activeIndex === 3 ? "d-block" : ""
                 }`}
               >
-                <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
+                <span className="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">
                   New
                 </span>
-                <Link to='#' className='nav-menu__link'>
+                <Link to="#" className="nav-menu__link">
                   Vendors
                 </Link>
                 <ul
@@ -290,45 +290,45 @@ const HeaderTwo = ({ category }) => {
                     activeIndex === 3 ? "open" : ""
                   }`}
                 >
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/vendor'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/vendor"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Vendors
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/vendor-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/vendor-details"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Vendor Details
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/vendor-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/vendor-two"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Vendors Two
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
+                  <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/vendor-two-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      to="/vendor-two-details"
+                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                     >
                       Vendors Two Details
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li
+              {/* <li
                 onClick={() => handleMenuClick(4)}
                 className={`on-hover-item nav-menu__item has-submenu ${
                   activeIndex === 4 ? "d-block" : ""
@@ -363,9 +363,9 @@ const HeaderTwo = ({ category }) => {
                     </Link>
                   </li>
                 </ul>
-              </li>
-              <li className='nav-menu__item'>
-                <Link to='/contact' className='nav-menu__link'>
+              </li> */}
+              <li className="nav-menu__item">
+                <Link to="/contact" className="nav-menu__link">
                   Contact Us
                 </Link>
               </li>
@@ -376,205 +376,205 @@ const HeaderTwo = ({ category }) => {
       </div>
       {/* ==================== Mobile Menu End Here ==================== */}
       {/* ======================= Middle Header Two Start ========================= */}
-      <header className='header-middle style-two bg-color-neutral'>
-        <div className='container container-lg'>
-          <nav className='header-inner flex-between'>
+      <header className="header-middle style-two bg-color-neutral">
+        <div className="container container-lg">
+          <nav className="header-inner flex-between">
             {/* Logo Start */}
-            <div className='logo'>
-              <Link to='/' className='link'>
-                <img src='assets/images/logo/logo-two.png' alt='Logo' />
+            <div className="logo">
+              <Link to="/" className="link">
+                <img src="assets/images/logo/logo-two.png" alt="Logo" />
               </Link>
             </div>
             {/* Logo End  */}
             {/* form Category Start */}
-            <div className='flex-align gap-16'>
-              <div className='select-dropdown-for-home-two d-lg-none d-block'>
+            <div className="flex-align gap-16">
+              <div className="select-dropdown-for-home-two d-lg-none d-block">
                 {/* Dropdown Select Start */}
-                <ul className='header-top__right style-two flex-align flex-wrap'>
-                  <li className='on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white'>
+                <ul className="header-top__right style-two flex-align flex-wrap">
+                  <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                     {/* Display the selected language */}
                     <Link
-                      to='#'
-                      className='selected-text text-heading text-sm py-8'
+                      to="#"
+                      className="selected-text text-heading text-sm py-8"
                     >
                       {selectedLanguage}
                     </Link>
-                    <ul className='selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8'>
+                    <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("English")}
                         >
                           <img
-                            src='assets/images/thumbs/flag1.png'
-                            alt='English'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag1.png"
+                            alt="English"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           English
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Japan")}
                         >
                           <img
-                            src='assets/images/thumbs/flag2.png'
-                            alt='Japan'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag2.png"
+                            alt="Japan"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Japan
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("French")}
                         >
                           <img
-                            src='assets/images/thumbs/flag3.png'
-                            alt='French'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag3.png"
+                            alt="French"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           French
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Germany")}
                         >
                           <img
-                            src='assets/images/thumbs/flag4.png'
-                            alt='Germany'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag4.png"
+                            alt="Germany"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Germany
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Bangladesh")}
                         >
                           <img
-                            src='assets/images/thumbs/flag6.png'
-                            alt='Bangladesh'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag6.png"
+                            alt="Bangladesh"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Bangladesh
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("South Korea")}
                         >
                           <img
-                            src='assets/images/thumbs/flag5.png'
-                            alt='South Korea'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag5.png"
+                            alt="South Korea"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           South Korea
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white'>
+                  <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                     {/* Display the selected currency */}
                     <Link
-                      to='#'
-                      className='selected-text text-heading text-sm py-8'
+                      to="#"
+                      className="selected-text text-heading text-sm py-8"
                     >
                       {selectedCurrency}
                     </Link>
-                    <ul className='selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8'>
+                    <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("USD")}
                         >
                           <img
-                            src='assets/images/thumbs/flag1.png'
-                            alt='USD'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag1.png"
+                            alt="USD"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           USD
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("Yen")}
                         >
                           <img
-                            src='assets/images/thumbs/flag2.png'
-                            alt='Yen'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag2.png"
+                            alt="Yen"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Yen
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("Franc")}
                         >
                           <img
-                            src='assets/images/thumbs/flag3.png'
-                            alt='Franc'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag3.png"
+                            alt="Franc"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Franc
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("EURO")}
                         >
                           <img
-                            src='assets/images/thumbs/flag4.png'
-                            alt='EURO'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag4.png"
+                            alt="EURO"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           EURO
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("BDT")}
                         >
                           <img
-                            src='assets/images/thumbs/flag6.png'
-                            alt='BDT'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag6.png"
+                            alt="BDT"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           BDT
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("WON")}
                         >
                           <img
-                            src='assets/images/thumbs/flag5.png'
-                            alt='WON'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag5.png"
+                            alt="WON"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           WON
                         </Link>
@@ -585,14 +585,14 @@ const HeaderTwo = ({ category }) => {
                 {/* Dropdown Select End */}
               </div>
               <form
-                action='#'
-                className='flex-align flex-wrap form-location-wrapper'
+                action="#"
+                className="flex-align flex-wrap form-location-wrapper"
               >
-                <div className='search-category style-two d-flex h-48 search-form d-sm-flex d-none'>
+                <div className="search-category style-two d-flex h-48 search-form d-sm-flex d-none">
                   <select
                     defaultValue={1}
-                    className='js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0'
-                    name='state'
+                    className="js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0"
+                    name="state"
                   >
                     <option value={1}>All Categories</option>
                     <option value={1}>Grocery</option>
@@ -606,84 +606,84 @@ const HeaderTwo = ({ category }) => {
                     <option value={1}>Noodles &amp; Rice</option>
                     <option value={1}>Ice Cream</option>
                   </select>
-                  <div className='search-form__wrapper position-relative'>
+                  <div className="search-form__wrapper position-relative">
                     <input
-                      type='text'
-                      className='search-form__input common-input py-13 ps-16 pe-18 rounded-0 border-0'
-                      placeholder='Search for a product or brand'
+                      type="text"
+                      className="search-form__input common-input py-13 ps-16 pe-18 rounded-0 border-0"
+                      placeholder="Search for a product or brand"
                     />
                   </div>
                   <button
-                    type='submit'
-                    className='bg-main-two-600 flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none'
+                    type="submit"
+                    className="bg-main-two-600 flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none"
                   >
-                    <i className='ph ph-magnifying-glass' />
+                    <i className="ph ph-magnifying-glass" />
                   </button>
                 </div>
               </form>
             </div>
             {/* form Category start */}
             {/* Header Middle Right start */}
-            <div className='header-right flex-align d-lg-block d-none'>
-              <div className='header-two-activities flex-align flex-wrap gap-32'>
+            <div className="header-right flex-align d-lg-block d-none">
+              <div className="header-two-activities flex-align flex-wrap gap-32">
                 <button
-                  type='button'
-                  className='flex-align search-icon d-lg-none d-flex gap-4 item-hover-two'
+                  type="button"
+                  className="flex-align search-icon d-lg-none d-flex gap-4 item-hover-two"
                 >
-                  <span className='text-2xl text-white d-flex position-relative item-hover__text'>
-                    <i className='ph ph-magnifying-glass' />
+                  <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                    <i className="ph ph-magnifying-glass" />
                   </span>
                 </button>
                 <Link
-                  to='/account'
-                  className='flex-align flex-column gap-8 item-hover-two'
+                  to="/account"
+                  className="flex-align flex-column gap-8 item-hover-two"
                 >
-                  <span className='text-2xl text-white d-flex position-relative item-hover__text'>
-                    <i className='ph ph-user' />
+                  <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                    <i className="ph ph-user" />
                   </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                  <span className="text-md text-white item-hover__text d-none d-lg-flex">
                     Profile
                   </span>
                 </Link>
                 <Link
-                  to='/wishlist'
-                  className='flex-align flex-column gap-8 item-hover-two'
+                  to="/wishlist"
+                  className="flex-align flex-column gap-8 item-hover-two"
                 >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph ph-heart' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                  <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                    <i className="ph ph-heart" />
+                    <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                       2
                     </span>
                   </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                  <span className="text-md text-white item-hover__text d-none d-lg-flex">
                     Wishlist
                   </span>
                 </Link>
                 <Link
-                  to='/cart'
-                  className='flex-align flex-column gap-8 item-hover-two'
+                  to="/cart"
+                  className="flex-align flex-column gap-8 item-hover-two"
                 >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph-fill ph-shuffle' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                  <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                    <i className="ph-fill ph-shuffle" />
+                    <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                       2
                     </span>
                   </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                  <span className="text-md text-white item-hover__text d-none d-lg-flex">
                     Compare
                   </span>
                 </Link>
                 <Link
-                  to='/cart'
-                  className='flex-align flex-column gap-8 item-hover-two'
+                  to="/cart"
+                  className="flex-align flex-column gap-8 item-hover-two"
                 >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph ph-shopping-cart-simple' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                  <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                    <i className="ph ph-shopping-cart-simple" />
+                    <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                       2
                     </span>
                   </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                  <span className="text-md text-white item-hover__text d-none d-lg-flex">
                     Cart
                   </span>
                 </Link>
@@ -700,9 +700,9 @@ const HeaderTwo = ({ category }) => {
           scroll && "fixed-header"
         }`}
       >
-        <div className='container container-lg'>
-          <nav className='header-inner d-flex justify-content-between gap-8'>
-            <div className='flex-align menu-category-wrapper'>
+        <div className="container container-lg">
+          <nav className="header-inner d-flex justify-content-between gap-8">
+            <div className="flex-align menu-category-wrapper">
               {/* Category Dropdown Start */}
               <div
                 className={`category-two ${
@@ -711,15 +711,15 @@ const HeaderTwo = ({ category }) => {
               >
                 <button
                   onClick={handleCategoryToggle}
-                  type='button'
-                  className='category__button flex-align gap-8 fw-medium bg-main-two-600 p-16 text-white'
+                  type="button"
+                  className="category__button flex-align gap-8 fw-medium bg-main-two-600 p-16 text-white"
                 >
-                  <span className='icon text-2xl d-xs-flex d-none'>
-                    <i className='ph ph-dots-nine' />
+                  <span className="icon text-2xl d-xs-flex d-none">
+                    <i className="ph ph-dots-nine" />
                   </span>
-                  <span className='d-sm-flex d-none'>All</span> Categories
-                  <span className='arrow-icon text-xl d-flex'>
-                    <i className='ph ph-caret-down' />
+                  <span className="d-sm-flex d-none">All</span> Categories
+                  <span className="arrow-icon text-xl d-flex">
+                    <i className="ph ph-caret-down" />
                   </span>
                 </button>
                 <div
@@ -732,17 +732,17 @@ const HeaderTwo = ({ category }) => {
                       handleCategoryToggle();
                       setActiveIndexCat(null);
                     }}
-                    type='button'
-                    className='close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex'
+                    type="button"
+                    className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
                   >
-                    <i className='ph ph-x' />{" "}
+                    <i className="ph ph-x" />{" "}
                   </button>
-                  <div className='logo px-16 d-lg-none d-block'>
-                    <Link to='/' className='link'>
-                      <img src='assets/images/logo/logo.png' alt='Logo' />
+                  <div className="logo px-16 d-lg-none d-block">
+                    <Link to="/" className="link">
+                      <img src="assets/images/logo/logo.png" alt="Logo" />
                     </Link>
                   </div>
-                  <ul className='scroll-sm p-0 py-8 overflow-y-auto'>
+                  <ul className="scroll-sm p-0 py-8 overflow-y-auto">
                     <li
                       onClick={() => handleCatClick(0)}
                       className={`has-submenus-submenu ${
@@ -751,12 +751,12 @@ const HeaderTwo = ({ category }) => {
                     >
                       <Link
                         onClick={() => setActiveIndexCat(null)}
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Cell Phone</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -764,27 +764,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 0 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Cell Phone
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -796,12 +796,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Wear</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -809,27 +809,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 1 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Wear
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -841,12 +841,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Computer</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -854,27 +854,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 2 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Computer
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -886,12 +886,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Headphone</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -899,27 +899,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 3 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Headphone
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -931,12 +931,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Smart Screen</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -944,27 +944,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 4 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Smart Screen
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -976,12 +976,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Smart Home</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -989,27 +989,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 5 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Smart Home
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1021,12 +1021,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Digital Accessories</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1034,27 +1034,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 6 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Digital Accessories
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1066,12 +1066,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span> Value Added Services</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1079,28 +1079,28 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 7 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           {" "}
                           Value Added Services
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1112,12 +1112,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Car Products</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1125,27 +1125,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 8 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Car Products
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1157,12 +1157,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Ecological Products</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1170,27 +1170,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 9 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Ecological Products
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1202,12 +1202,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Flat</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1215,27 +1215,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 10 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Flat
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1247,12 +1247,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Commercial Terminal</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1260,27 +1260,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 11 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Commercial Terminal
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1292,12 +1292,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Headphone</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1305,27 +1305,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 12 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Headphone
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1337,12 +1337,12 @@ const HeaderTwo = ({ category }) => {
                       }`}
                     >
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>Smart Screen</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
                       <div
@@ -1350,27 +1350,27 @@ const HeaderTwo = ({ category }) => {
                           activeIndexCat === 13 ? "open" : ""
                         }`}
                       >
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Smart Screen
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Samsung</Link>
+                            <Link to="/shop">Samsung</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Iphone</Link>
+                            <Link to="/shop">Iphone</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Vivo</Link>
+                            <Link to="/shop">Vivo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Oppo</Link>
+                            <Link to="/shop">Oppo</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Itel</Link>
+                            <Link to="/shop">Itel</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Realme</Link>
+                            <Link to="/shop">Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1384,299 +1384,299 @@ const HeaderTwo = ({ category }) => {
                 }`}
               >
                 <button
-                  type='button'
-                  className='category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100 text-white'
+                  type="button"
+                  className="category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100 text-white"
                 >
-                  <span className='icon text-2xl d-xs-flex d-none'>
-                    <i className='ph ph-dots-nine' />
+                  <span className="icon text-2xl d-xs-flex d-none">
+                    <i className="ph ph-dots-nine" />
                   </span>
-                  <span className='d-sm-flex d-none'>All</span> Categories
-                  <span className='arrow-icon text-xl d-flex'>
-                    <i className='ph ph-caret-down' />
+                  <span className="d-sm-flex d-none">All</span> Categories
+                  <span className="arrow-icon text-xl d-flex">
+                    <i className="ph ph-caret-down" />
                   </span>
                 </button>
-                <div className='responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper'>
+                <div className="responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper">
                   <button
-                    type='button'
-                    className='close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex'
+                    type="button"
+                    className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
                   >
-                    <i className='ph ph-x' />{" "}
+                    <i className="ph ph-x" />{" "}
                   </button>
-                  <div className='logo px-16 d-lg-none d-block'>
-                    <Link to='/' className='link'>
-                      <img src='assets/images/logo/logo.png' alt='Logo' />
+                  <div className="logo px-16 d-lg-none d-block">
+                    <Link to="/" className="link">
+                      <img src="assets/images/logo/logo.png" alt="Logo" />
                     </Link>
                   </div>
-                  <ul className='scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto'>
-                    <li className='has-submenus-submenu'>
+                  <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-carrot' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-carrot" />
                         </span>
                         <span>Vegetables &amp; Fruit</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Vegetables &amp; Fruit
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Potato &amp; Tomato</Link>
+                            <Link to="/shop">Potato &amp; Tomato</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Cucumber &amp; Capsicum</Link>
+                            <Link to="/shop">Cucumber &amp; Capsicum</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Leafy Vegetables</Link>
+                            <Link to="/shop">Leafy Vegetables</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Root Vegetables</Link>
+                            <Link to="/shop">Root Vegetables</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Beans &amp; Okra</Link>
+                            <Link to="/shop">Beans &amp; Okra</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Cabbage &amp; Cauliflower</Link>
+                            <Link to="/shop">Cabbage &amp; Cauliflower</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Gourd &amp; Drumstick</Link>
+                            <Link to="/shop">Gourd &amp; Drumstick</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Specialty</Link>
+                            <Link to="/shop">Specialty</Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Beverages</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Beverages
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'>Soda &amp; Cocktail Mix </Link>
+                            <Link to="/shop">Soda &amp; Cocktail Mix </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Sports &amp; Energy Drinks</Link>
+                            <Link to="/shop"> Sports &amp; Energy Drinks</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Non Alcoholic Drinks</Link>
+                            <Link to="/shop"> Non Alcoholic Drinks</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Packaged Water </Link>
+                            <Link to="/shop"> Packaged Water </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Spring Water</Link>
+                            <Link to="/shop"> Spring Water</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Flavoured Water </Link>
+                            <Link to="/shop"> Flavoured Water </Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Meats &amp; Seafood</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Meats &amp; Seafood
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'> Fresh Meat </Link>
+                            <Link to="/shop"> Fresh Meat </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Frozen Meat</Link>
+                            <Link to="/shop"> Frozen Meat</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Marinated Meat</Link>
+                            <Link to="/shop"> Marinated Meat</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Fresh &amp; Frozen Meat</Link>
+                            <Link to="/shop"> Fresh &amp; Frozen Meat</Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Breakfast &amp; Dairy</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Breakfast &amp; Dairy
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'> Oats &amp; Porridge</Link>
+                            <Link to="/shop"> Oats &amp; Porridge</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Kids Cereal</Link>
+                            <Link to="/shop"> Kids Cereal</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Muesli</Link>
+                            <Link to="/shop"> Muesli</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Flakes</Link>
+                            <Link to="/shop"> Flakes</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Granola &amp; Cereal Bars</Link>
+                            <Link to="/shop"> Granola &amp; Cereal Bars</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Instant Noodles</Link>
+                            <Link to="/shop"> Instant Noodles</Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Frozen Foods</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Frozen Foods
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'> Instant Noodles </Link>
+                            <Link to="/shop"> Instant Noodles </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Hakka Noodles</Link>
+                            <Link to="/shop"> Hakka Noodles</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Cup Noodles</Link>
+                            <Link to="/shop"> Cup Noodles</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Vermicelli</Link>
+                            <Link to="/shop"> Vermicelli</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Instant Pasta</Link>
+                            <Link to="/shop"> Instant Pasta</Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Biscuits &amp; Snacks</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Biscuits &amp; Snacks
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'> Salted Biscuits </Link>
+                            <Link to="/shop"> Salted Biscuits </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Marie, Health, Digestive</Link>
+                            <Link to="/shop"> Marie, Health, Digestive</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>
+                            <Link to="/shop">
                               {" "}
                               Cream Biscuits &amp; Wafers{" "}
                             </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Glucose &amp; Milk biscuits</Link>
+                            <Link to="/shop"> Glucose &amp; Milk biscuits</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Cookies</Link>
+                            <Link to="/shop"> Cookies</Link>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <li className='has-submenus-submenu'>
+                    <li className="has-submenus-submenu">
                       <Link
-                        to='#'
-                        className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'
+                        to="#"
+                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
-                        <span className='text-xl d-flex'>
-                          <i className='ph ph-brandy' />
+                        <span className="text-xl d-flex">
+                          <i className="ph ph-brandy" />
                         </span>
                         <span>Grocery &amp; Staples</span>
-                        <span className='icon text-md d-flex ms-auto'>
-                          <i className='ph ph-caret-right' />
+                        <span className="icon text-md d-flex ms-auto">
+                          <i className="ph ph-caret-right" />
                         </span>
                       </Link>
-                      <div className='submenus-submenu py-16'>
-                        <h6 className='text-lg px-16 submenus-submenu__title'>
+                      <div className="submenus-submenu py-16">
+                        <h6 className="text-lg px-16 submenus-submenu__title">
                           Grocery &amp; Staples
                         </h6>
-                        <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
+                        <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                           <li>
-                            <Link to='/shop'> Lemon, Ginger &amp; Garlic </Link>
+                            <Link to="/shop"> Lemon, Ginger &amp; Garlic </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Indian &amp; Exotic Herbs</Link>
+                            <Link to="/shop"> Indian &amp; Exotic Herbs</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Orangic Vegetables</Link>
+                            <Link to="/shop"> Orangic Vegetables</Link>
                           </li>
                           <li>
-                            <Link to='/shop'>Orangic Fruits </Link>
+                            <Link to="/shop">Orangic Fruits </Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Orangic Dry Fruits</Link>
+                            <Link to="/shop"> Orangic Dry Fruits</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Orangic Dals &amp; pulses</Link>
+                            <Link to="/shop"> Orangic Dals &amp; pulses</Link>
                           </li>
                           <li>
-                            <Link to='/shop'> Orangic Millet &amp; Flours</Link>
+                            <Link to="/shop"> Orangic Millet &amp; Flours</Link>
                           </li>
                         </ul>
                       </div>
@@ -1686,17 +1686,17 @@ const HeaderTwo = ({ category }) => {
               </div>
               {/* Category Dropdown End  */}
               {/* Menu Start  */}
-              <div className='header-menu d-lg-block d-none'>
+              <div className="header-menu d-lg-block d-none">
                 {/* Nav Menu Start */}
-                <ul className='nav-menu flex-align '>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link to='#' className='nav-menu__link'>
+                <ul className="nav-menu flex-align ">
+                  <li className="on-hover-item nav-menu__item has-submenu">
+                    <Link to="#" className="nav-menu__link">
                       Home
                     </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/'
+                          to="/"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1707,9 +1707,9 @@ const HeaderTwo = ({ category }) => {
                           Home Grocery
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/index-two'
+                          to="/index-two"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1720,9 +1720,9 @@ const HeaderTwo = ({ category }) => {
                           Home Electronics
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/index-three'
+                          to="/index-three"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1735,14 +1735,14 @@ const HeaderTwo = ({ category }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link to='#' className='nav-menu__link'>
+                  <li className="on-hover-item nav-menu__item has-submenu">
+                    <Link to="#" className="nav-menu__link">
                       Shop
                     </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/shop'
+                          to="/shop"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1752,9 +1752,9 @@ const HeaderTwo = ({ category }) => {
                           Shop
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/product-details'
+                          to="/product-details"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1765,9 +1765,9 @@ const HeaderTwo = ({ category }) => {
                           Shop Details
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/product-details-two'
+                          to="/product-details-two"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1780,17 +1780,17 @@ const HeaderTwo = ({ category }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <span className='badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4'>
+                  <li className="on-hover-item nav-menu__item has-submenu">
+                    <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                       New
                     </span>
-                    <Link to='#' className='nav-menu__link'>
+                    <Link to="#" className="nav-menu__link">
                       Pages
                     </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/cart'
+                          to="/cart"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1800,9 +1800,9 @@ const HeaderTwo = ({ category }) => {
                           Cart
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/wishlist'
+                          to="/wishlist"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1812,9 +1812,9 @@ const HeaderTwo = ({ category }) => {
                           Wishlist
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/checkout'
+                          to="/checkout"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1824,9 +1824,9 @@ const HeaderTwo = ({ category }) => {
                           Checkout
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/become-seller'
+                          to="/become-seller"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1836,9 +1836,9 @@ const HeaderTwo = ({ category }) => {
                           Become Seller
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/account'
+                          to="/account"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1850,17 +1850,17 @@ const HeaderTwo = ({ category }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
+                  <li className="on-hover-item nav-menu__item has-submenu">
+                    <span className="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">
                       New
                     </span>
-                    <Link to='#' className='nav-menu__link'>
+                    <Link to="#" className="nav-menu__link">
                       Vendors
                     </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/vendor'
+                          to="/vendor"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1870,9 +1870,9 @@ const HeaderTwo = ({ category }) => {
                           Vendor
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/vendor-details'
+                          to="/vendor-details"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1882,9 +1882,9 @@ const HeaderTwo = ({ category }) => {
                           Vendor Details
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/vendor-two'
+                          to="/vendor-two"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1894,9 +1894,9 @@ const HeaderTwo = ({ category }) => {
                           Vendor Two
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/vendor-two-details'
+                          to="/vendor-two-details"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1908,14 +1908,14 @@ const HeaderTwo = ({ category }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link to='#' className='nav-menu__link'>
+                  <li className="on-hover-item nav-menu__item has-submenu">
+                    <Link to="#" className="nav-menu__link">
                       Blog
                     </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/blog'
+                          to="/blog"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1925,9 +1925,9 @@ const HeaderTwo = ({ category }) => {
                           Blog
                         </NavLink>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
+                      <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
-                          to='/blog-details'
+                          to="/blog-details"
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
@@ -1940,9 +1940,9 @@ const HeaderTwo = ({ category }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className='nav-menu__item'>
+                  <li className="nav-menu__item">
                     <NavLink
-                      to='/contact'
+                      to="/contact"
                       className={(navData) =>
                         navData.isActive
                           ? "nav-menu__link activePage"
@@ -1958,194 +1958,194 @@ const HeaderTwo = ({ category }) => {
               {/* Menu End  */}
             </div>
             {/* Header Right start */}
-            <div className='header-right flex-align'>
-              <div className='select-dropdown-for-home-two d-lg-block d-none'>
+            <div className="header-right flex-align">
+              <div className="select-dropdown-for-home-two d-lg-block d-none">
                 {/* Dropdown Select Start */}
-                <ul className='header-top__right style-two flex-align flex-wrap'>
-                  <li className='on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white'>
+                <ul className="header-top__right style-two flex-align flex-wrap">
+                  <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                     {/* Display the selected language */}
                     <Link
-                      to='#'
-                      className='selected-text text-heading text-sm py-8'
+                      to="#"
+                      className="selected-text text-heading text-sm py-8"
                     >
                       {selectedLanguage}
                     </Link>
-                    <ul className='selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8'>
+                    <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("English")}
                         >
                           <img
-                            src='assets/images/thumbs/flag1.png'
-                            alt='English'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag1.png"
+                            alt="English"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           English
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Japan")}
                         >
                           <img
-                            src='assets/images/thumbs/flag2.png'
-                            alt='Japan'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag2.png"
+                            alt="Japan"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Japan
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("French")}
                         >
                           <img
-                            src='assets/images/thumbs/flag3.png'
-                            alt='French'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag3.png"
+                            alt="French"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           French
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Germany")}
                         >
                           <img
-                            src='assets/images/thumbs/flag4.png'
-                            alt='Germany'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag4.png"
+                            alt="Germany"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Germany
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("Bangladesh")}
                         >
                           <img
-                            src='assets/images/thumbs/flag6.png'
-                            alt='Bangladesh'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag6.png"
+                            alt="Bangladesh"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Bangladesh
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleLanguageChange("South Korea")}
                         >
                           <img
-                            src='assets/images/thumbs/flag5.png'
-                            alt='South Korea'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag5.png"
+                            alt="South Korea"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           South Korea
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className='on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white'>
+                  <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                     {/* Display the selected currency */}
                     <Link
-                      to='#'
-                      className='selected-text text-heading text-sm py-8'
+                      to="#"
+                      className="selected-text text-heading text-sm py-8"
                     >
                       {selectedCurrency}
                     </Link>
-                    <ul className='selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8'>
+                    <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("USD")}
                         >
                           <img
-                            src='assets/images/thumbs/flag1.png'
-                            alt='USD'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag1.png"
+                            alt="USD"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           USD
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("Yen")}
                         >
                           <img
-                            src='assets/images/thumbs/flag2.png'
-                            alt='Yen'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag2.png"
+                            alt="Yen"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Yen
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("Franc")}
                         >
                           <img
-                            src='assets/images/thumbs/flag3.png'
-                            alt='Franc'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag3.png"
+                            alt="Franc"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           Franc
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("EURO")}
                         >
                           <img
-                            src='assets/images/thumbs/flag4.png'
-                            alt='EURO'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag4.png"
+                            alt="EURO"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           EURO
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("BDT")}
                         >
                           <img
-                            src='assets/images/thumbs/flag6.png'
-                            alt='BDT'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag6.png"
+                            alt="BDT"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           BDT
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='#'
-                          className='hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0'
+                          to="#"
+                          className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                           onClick={() => handleCurrencyChange("WON")}
                         >
                           <img
-                            src='assets/images/thumbs/flag5.png'
-                            alt='WON'
-                            className='w-16 h-12 rounded-4 border border-gray-100'
+                            src="assets/images/thumbs/flag5.png"
+                            alt="WON"
+                            className="w-16 h-12 rounded-4 border border-gray-100"
                           />
                           WON
                         </Link>
@@ -2155,67 +2155,67 @@ const HeaderTwo = ({ category }) => {
                 </ul>
                 {/* Dropdown Select End */}
               </div>
-              <div className='me-8 d-lg-none d-block'>
-                <div className='header-two-activities flex-align flex-wrap gap-32'>
+              <div className="me-8 d-lg-none d-block">
+                <div className="header-two-activities flex-align flex-wrap gap-32">
                   <button
                     onClick={handleSearchToggle}
-                    type='button'
-                    className='flex-align search-icon d-lg-none d-flex gap-4 item-hover-two'
+                    type="button"
+                    className="flex-align search-icon d-lg-none d-flex gap-4 item-hover-two"
                   >
-                    <span className='text-2xl text-white d-flex position-relative item-hover__text'>
-                      <i className='ph ph-magnifying-glass' />
+                    <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                      <i className="ph ph-magnifying-glass" />
                     </span>
                   </button>
                   <Link
-                    to='/account'
-                    className='flex-align flex-column gap-8 item-hover-two'
+                    to="/account"
+                    className="flex-align flex-column gap-8 item-hover-two"
                   >
-                    <span className='text-2xl text-white d-flex position-relative item-hover__text'>
-                      <i className='ph ph-user' />
+                    <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                      <i className="ph ph-user" />
                     </span>
-                    <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                    <span className="text-md text-white item-hover__text d-none d-lg-flex">
                       Profile
                     </span>
                   </Link>
                   <Link
-                    to='/wishlist'
-                    className='flex-align flex-column gap-8 item-hover-two'
+                    to="/wishlist"
+                    className="flex-align flex-column gap-8 item-hover-two"
                   >
-                    <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                      <i className='ph ph-heart' />
-                      <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                    <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                      <i className="ph ph-heart" />
+                      <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                         2
                       </span>
                     </span>
-                    <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                    <span className="text-md text-white item-hover__text d-none d-lg-flex">
                       Wishlist
                     </span>
                   </Link>
                   <Link
-                    to='/cart'
-                    className='flex-align flex-column gap-8 item-hover-two'
+                    to="/cart"
+                    className="flex-align flex-column gap-8 item-hover-two"
                   >
-                    <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                      <i className='ph-fill ph-shuffle' />
-                      <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                    <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                      <i className="ph-fill ph-shuffle" />
+                      <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                         2
                       </span>
                     </span>
-                    <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                    <span className="text-md text-white item-hover__text d-none d-lg-flex">
                       Compare
                     </span>
                   </Link>
                   <Link
-                    to='/cart'
-                    className='flex-align flex-column gap-8 item-hover-two'
+                    to="/cart"
+                    className="flex-align flex-column gap-8 item-hover-two"
                   >
-                    <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                      <i className='ph ph-shopping-cart-simple' />
-                      <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
+                    <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
+                      <i className="ph ph-shopping-cart-simple" />
+                      <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                         2
                       </span>
                     </span>
-                    <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                    <span className="text-md text-white item-hover__text d-none d-lg-flex">
                       Cart
                     </span>
                   </Link>
@@ -2223,11 +2223,11 @@ const HeaderTwo = ({ category }) => {
               </div>
               <button
                 onClick={handleMenuToggle}
-                type='button'
-                className='toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex'
+                type="button"
+                className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex"
               >
                 {" "}
-                <i className='ph ph-list' />{" "}
+                <i className="ph ph-list" />{" "}
               </button>
             </div>
             {/* Header Right End  */}

@@ -56,7 +56,7 @@ const HomePageOne = () => {
       {/* <OfferOne /> */}
 
       {/* RecommendedOne */}
-      <RecommendedOne />
+      {/* <RecommendedOne /> */}
 
       {/* HotDealsOne */}
       <HotDealsOne />
