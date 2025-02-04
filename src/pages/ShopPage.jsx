@@ -1,15 +1,14 @@
 import React from "react";
 import Preloader from "../helper/Preloader";
-import HeaderTwo from "../components/HeaderTwo";
+import HeaderOne from "../components/HeaderOne";
 import Breadcrumb from "../components/Breadcrumb";
 import ShopSection from "../components/ShopSection";
-import ShippingTwo from "../components/ShippingTwo";
-import FooterTwo from "../components/FooterTwo";
+import ShippingOne from "../components/ShippingOne";
+import FooterOne from "../components/FooterOne";
 import ColorInit from "../helper/ColorInit";
 import ScrollToTop from "react-scroll-to-top";
 
 const ShopPage = () => {
-
   return (
     <>
       {/* ColorInit */}
@@ -22,7 +21,7 @@ const ShopPage = () => {
       <Preloader />
 
       {/* HeaderOne */}
-      <HeaderTwo category={true} />
+      <HeaderOne category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Shop"} />
@@ -31,12 +30,10 @@ const ShopPage = () => {
       <ShopSection />
 
       {/* ShippingTwo */}
-      <ShippingTwo />
+      <ShippingOne />
 
       {/* FooterTwo */}
-      <FooterTwo />
-
-
+      <FooterOne />
     </>
   );
 };

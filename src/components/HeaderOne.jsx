@@ -131,16 +131,6 @@ const HeaderOne = () => {
                     activeIndex === 0 ? "open" : ""
                   }`}
                 >
-                  {/* <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Home
-                    </Link>
-                  </li> */}
                   <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       to="/index-two"
@@ -151,120 +141,11 @@ const HeaderOne = () => {
                       Home Electronics
                     </Link>
                   </li>
-                  {/* <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/index-three"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      Home Fashion
-                    </Link>
-                  </li> */}
-                </ul>
-              </li>
-
-              {/* Shop Menu */}
-              {/* <li
-                onClick={() => handleMenuClick(1)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 1 ? "d-block" : ""
-                }`}
-              >
-                <Link to="#" className="nav-menu__link">
-                  Shop
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 1 ? "open" : ""
-                  }`}
-                >
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/shop"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Shop
-                    </Link>
-                  </li>
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/product-details"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Shop Details
-                    </Link>
-                  </li>
-                 
-                </ul>
-              </li> */}
-
-              {/* Pages Menu */}
-              <li
-                onClick={() => handleMenuClick(2)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 2 ? "d-block" : ""
-                }`}
-              >
-                <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
-                  New
-                </span>
-                <Link to="#" className="nav-menu__link">
-                  Pages
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 2 ? "open" : ""
-                  }`}
-                >
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/cart"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Cart
-                    </Link>
-                  </li>
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/wishlist"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      Wishlist
-                    </Link>
-                  </li>
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/checkout"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Checkout{" "}
-                    </Link>
-                  </li>
-
-                  <li className="common-dropdown__item nav-submenu__item">
-                    <Link
-                      to="/account"
-                      className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Account
-                    </Link>
-                  </li>
                 </ul>
               </li>
 
               {/* Vendors Menu */}
-              <li
+              {/* <li
                 onClick={() => handleMenuClick(3)}
                 className={`on-hover-item nav-menu__item has-submenu ${
                   activeIndex === 3 ? "d-block" : ""
@@ -318,7 +199,7 @@ const HeaderOne = () => {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               {/* Contact Us Menu */}
               <li className="nav-menu__item">
@@ -773,7 +654,7 @@ const HeaderOne = () => {
                           Home Electronics
                         </NavLink>
                       </li>
-                      <li className="common-dropdown__item nav-submenu__item">
+                      {/* <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
                           to="/index-three"
                           className={(navData) =>
@@ -784,7 +665,7 @@ const HeaderOne = () => {
                         >
                           Home Fashion
                         </NavLink>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   <li className="on-hover-item nav-menu__item has-submenu">
@@ -818,7 +699,7 @@ const HeaderOne = () => {
                           Shop Details
                         </NavLink>
                       </li>
-                      <li className="common-dropdown__item nav-submenu__item">
+                      {/* <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
                           to="/product-details-two"
                           className={(navData) =>
@@ -830,10 +711,10 @@ const HeaderOne = () => {
                           {" "}
                           Shop Details Two
                         </NavLink>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
-                  <li className="on-hover-item nav-menu__item has-submenu">
+                  {/* <li className="on-hover-item nav-menu__item has-submenu">
                     <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                       New
                     </span>
@@ -906,7 +787,7 @@ const HeaderOne = () => {
                         </NavLink>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className="on-hover-item nav-menu__item has-submenu">
                     <span className="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">
                       New
@@ -952,7 +833,7 @@ const HeaderOne = () => {
                         </NavLink>
                       </li>
 
-                      <li className="common-dropdown__item nav-submenu__item">
+                      {/* <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
                           to="/vendor-two-details"
                           className={(navData) =>
@@ -963,7 +844,7 @@ const HeaderOne = () => {
                         >
                           Vendors Two Details
                         </NavLink>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
 

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const FooterOne = () => {
   return (
     <footer className="footer py-120">
-      <img
+      {/* <img
         src="assets/images/bg/body-bottom-bg.png"
         alt="BG"
         className="body-bottom-bg"
-      />
+      /> */}
       <div className="container container-lg">
         <div className="footer-item-wrapper d-flex align-items-start flex-wrap">
           <div className="footer-item">
@@ -40,13 +40,13 @@ const FooterOne = () => {
                 >
                   +00 123 456 789
                 </Link>
-                <span className="text-md text-main-600 ">or</span>
+                {/* <span className="text-md text-main-600 ">or</span>
                 <Link
                   to="/tel:+00987654012"
                   className="text-md text-gray-900 hover-text-main-600"
                 >
                   +00 987 654 012
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="flex-align gap-16 mb-16">
@@ -57,11 +57,11 @@ const FooterOne = () => {
                 to="/mailto:support24@marketpro.com"
                 className="text-md text-gray-900 hover-text-main-600"
               >
-                support24@marketpro.com
+                support24@shopafrican.com
               </Link>
             </div>
           </div>
-          <div className="footer-item">
+          {/* <div className="footer-item">
             <h6 className="footer-item__title">Information</h6>
             <ul className="footer-menu">
               <li className="mb-16">
@@ -95,7 +95,7 @@ const FooterOne = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="footer-item">
             <h6 className="footer-item__title">Customer Support</h6>
             <ul className="footer-menu">
@@ -112,7 +112,7 @@ const FooterOne = () => {
                   Contact Us
                 </Link>
               </li>
-              <li className="mb-16">
+              {/* <li className="mb-16">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Report Abuse
                 </Link>
@@ -121,7 +121,7 @@ const FooterOne = () => {
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Submit and Dispute
                 </Link>
-              </li>
+              </li> */}
               <li className="mb-16">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Policies &amp; Rules
@@ -152,16 +152,16 @@ const FooterOne = () => {
                   Shoping Cart
                 </Link>
               </li>
-              <li className="mb-16">
+              {/* <li className="mb-16">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Compare
                 </Link>
-              </li>
-              <li className="mb-16">
+              </li> */}
+              {/* <li className="mb-16">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Help Ticket
                 </Link>
-              </li>
+              </li> */}
               <li className="">
                 <Link
                   to="/wishlist"
@@ -172,7 +172,7 @@ const FooterOne = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-item">
+          {/* <div className="footer-item">
             <h6 className="footer-item__title">Daily Groceries</h6>
             <ul className="footer-menu">
               <li className="mb-16">
@@ -206,8 +206,8 @@ const FooterOne = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div className="footer-item">
+          </div> */}
+          {/* <div className="footer-item">
             <h6 className="">Shop on The Go</h6>
             <p className="mb-16">Marketpro App is available. Get it now</p>
             <div className="flex-align gap-8 my-32">
@@ -252,7 +252,7 @@ const FooterOne = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

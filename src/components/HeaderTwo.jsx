@@ -599,12 +599,6 @@ const HeaderTwo = ({ category }) => {
                     <option value={1}>Breakfast &amp; Dairy</option>
                     <option value={1}>Vegetables</option>
                     <option value={1}>Milks and Dairies</option>
-                    <option value={1}>Pet Foods &amp; Toy</option>
-                    <option value={1}>Breads &amp; Bakery</option>
-                    <option value={1}>Fresh Seafood</option>
-                    <option value={1}>Fronzen Foods</option>
-                    <option value={1}>Noodles &amp; Rice</option>
-                    <option value={1}>Ice Cream</option>
                   </select>
                   <div className="search-form__wrapper position-relative">
                     <input
