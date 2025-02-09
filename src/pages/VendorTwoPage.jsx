@@ -2,11 +2,11 @@ import React from "react";
 import ColorInit from "../helper/ColorInit";
 import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
-import HeaderTwo from "../components/HeaderTwo";
+import HeaderOne from "../components/HeaderOne";
 import Breadcrumb from "../components/Breadcrumb";
 import VendorTwo from "../components/VendorTwo";
 import ShippingOne from "../components/ShippingOne";
-import FooterTwo from "../components/FooterTwo";
+import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 
 const VendorTwoPage = () => {
@@ -16,13 +16,13 @@ const VendorTwoPage = () => {
       <ColorInit color={true} />
 
       {/* ScrollToTop */}
-      <ScrollToTop smooth color='#FA6400' />
+      <ScrollToTop smooth color="#FA6400" />
 
       {/* Preloader */}
       <Preloader />
 
-      {/* HeaderTwo */}
-      <HeaderTwo category={true} />
+      {/* HeaderOne */}
+      <HeaderOne category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"All Vendors"} />
@@ -33,8 +33,8 @@ const VendorTwoPage = () => {
       {/* ShippingOne */}
       <ShippingOne />
 
-      {/* FooterTwo */}
-      <FooterTwo />
+      {/* FooterOne */}
+      <FooterOne />
 
       {/* BottomFooter */}
       <BottomFooter />

@@ -1,19 +1,15 @@
 import React from "react";
 import Preloader from "../helper/Preloader";
 import ColorInit from "../helper/ColorInit";
-import HeaderTwo from "../components/HeaderTwo";
+import HeaderOne from "../components/HeaderOne";
 import Breadcrumb from "../components/Breadcrumb";
-import FooterTwo from "../components/FooterTwo";
+import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 import CartSection from "../components/CartSection";
 import ShippingOne from "../components/ShippingOne";
 import ScrollToTop from "react-scroll-to-top";
 
-
 const CartPage = () => {
-
-
-
   return (
     <>
       {/* ColorInit */}
@@ -26,7 +22,7 @@ const CartPage = () => {
       <Preloader />
 
       {/* HeaderTwo */}
-      <HeaderTwo category={true} />
+      <HeaderOne category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Cart"} />
@@ -38,12 +34,10 @@ const CartPage = () => {
       <ShippingOne />
 
       {/* FooterTwo */}
-      <FooterTwo />
+      <FooterOne />
 
       {/* BottomFooter */}
       <BottomFooter />
-
-
     </>
   );
 };

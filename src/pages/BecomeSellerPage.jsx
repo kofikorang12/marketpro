@@ -2,7 +2,7 @@ import React from "react";
 import ColorInit from "../helper/ColorInit";
 import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
-import HeaderTwo from "../components/HeaderTwo";
+import HeaderOne from "../components/HeaderOne";
 import Breadcrumb from "../components/Breadcrumb";
 import BreadcrumbImage from "../components/BreadcrumbImage";
 import WhyBecomeSeller from "../components/WhyBecomeSeller";
@@ -10,7 +10,7 @@ import CounterSection from "../components/CounterSection";
 import StepsSection from "../components/StepsSection";
 import TestimonialOne from "../components/TestimonialOne";
 import ShippingOne from "../components/ShippingOne";
-import FooterTwo from "../components/FooterTwo";
+import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 
 const BecomeSellerPage = () => {
@@ -20,13 +20,13 @@ const BecomeSellerPage = () => {
       <ColorInit color={true} />
 
       {/* ScrollToTop */}
-      <ScrollToTop smooth color='#FA6400' />
+      <ScrollToTop smooth color="#FA6400" />
 
       {/* Preloader */}
       <Preloader />
 
       {/* HeaderTwo */}
-      <HeaderTwo category={true} />
+      <HeaderOne category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Become Seller"} />
@@ -44,7 +44,7 @@ const BecomeSellerPage = () => {
       <StepsSection />
 
       {/* TestimonialOne */}
-      <section className='pb-120'>
+      <section className="pb-120">
         <TestimonialOne />
       </section>
 
@@ -52,7 +52,7 @@ const BecomeSellerPage = () => {
       <ShippingOne />
 
       {/* FooterTwo */}
-      <FooterTwo />
+      <FooterOne />
 
       {/* BottomFooter */}
       <BottomFooter />
