@@ -9,8 +9,8 @@ const BottomFooter = () => {
             Shop Africa Product © 2025. All Rights Reserved{" "}
           </p>
           <div className="flex-align gap-8 flex-wrap">
-            <span className="text-heading text-sm">We Are Acepting</span>
-            <img src="assets/images/thumbs/payment-method.png" alt="" />
+            {/* <span className="text-heading text-sm">We Are Acepting</span> */}
+            {/* <img src="assets/images/thumbs/payment-method.png" alt="" /> */}
           </div>
         </div>
       </div>

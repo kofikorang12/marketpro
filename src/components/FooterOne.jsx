@@ -122,16 +122,16 @@ const FooterOne = () => {
                   Submit and Dispute
                 </Link>
               </li> */}
-              <li className="mb-16">
+              {/* <li className="mb-16">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Policies &amp; Rules
                 </Link>
-              </li>
-              <li className="">
+              </li> */}
+              {/* <li className="">
                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                   Online Shopping
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-item">

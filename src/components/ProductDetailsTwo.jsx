@@ -14,11 +14,11 @@ const ProductDetailsTwo = () => {
     return () => clearInterval(interval);
   }, []);
   const productImages = [
-    "assets/images/thumbs/product-details-two-thumb1.png",
-    "assets/images/thumbs/product-details-two-thumb2.png",
-    "assets/images/thumbs/product-details-two-thumb3.png",
-    "assets/images/thumbs/product-details-two-thumb1.png",
-    "assets/images/thumbs/product-details-two-thumb2.png",
+    "assets/images/thumbs/product-details-two-thumb1.JPG",
+    "assets/images/thumbs/product-details-two-thumb2.JPG",
+    "assets/images/thumbs/product-details-two-thumb3.JPG",
+    "assets/images/thumbs/product-details-two-thumb4.JPG",
+    "assets/images/thumbs/product-details-two-thumb5.JPG",
   ];
 
   // increment & decrement

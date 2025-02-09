@@ -131,7 +131,7 @@ const HeaderOne = () => {
                     activeIndex === 0 ? "open" : ""
                   }`}
                 >
-                  <li className="common-dropdown__item nav-submenu__item">
+                  {/* <li className="common-dropdown__item nav-submenu__item">
                     <Link
                       to="/index-two"
                       className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
@@ -139,8 +139,8 @@ const HeaderOne = () => {
                     >
                       {" "}
                       Home Electronics
-                    </Link>
-                  </li>
+                    </Link> 
+                  </li> */}
                 </ul>
               </li>
 
@@ -367,26 +367,6 @@ const HeaderOne = () => {
                   >
                     <i className="ph ph-magnifying-glass" />
                   </button>
-                </div>
-              </div>
-              <div className="location-box bg-white flex-align gap-8 py-6 px-16 rounded-pill border border-gray-100">
-                <span className="text-gray-900 text-xl d-xs-flex d-none">
-                  <i className="ph ph-map-pin" />
-                </span>
-                <div className="line-height-1">
-                  <span className="text-gray-600 text-xs">Your Location</span>
-                  <div className="line-height-1">
-                    <select
-                      defaultValue={1}
-                      className="js-example-basic-single border border-gray-200 border-end-0"
-                      name="state"
-                    >
-                      <option value={1}>Alabama</option>
-                      <option value={1}>Alaska</option>
-                      <option value={1}>Arizona</option>
-                      <option value={1}>Delaware</option>
-                    </select>
-                  </div>
                 </div>
               </div>
             </form>
@@ -638,10 +618,10 @@ const HeaderOne = () => {
                               : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                           }
                         >
-                          Home Grocery
+                          Home
                         </NavLink>
                       </li>
-                      <li className="common-dropdown__item nav-submenu__item">
+                      {/* <li className="common-dropdown__item nav-submenu__item">
                         <NavLink
                           to="/index-two"
                           className={(navData) =>
@@ -652,18 +632,6 @@ const HeaderOne = () => {
                         >
                           {" "}
                           Home Electronics
-                        </NavLink>
-                      </li>
-                      {/* <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/index-three"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Home Fashion
                         </NavLink>
                       </li> */}
                     </ul>
@@ -699,95 +667,9 @@ const HeaderOne = () => {
                           Shop Details
                         </NavLink>
                       </li>
-                      {/* <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/product-details-two"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Shop Details Two
-                        </NavLink>
-                      </li> */}
                     </ul>
                   </li>
-                  {/* <li className="on-hover-item nav-menu__item has-submenu">
-                    <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
-                      New
-                    </span>
-                    <Link to="#" className="nav-menu__link">
-                      Pages
-                    </Link>
-                    <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/cart"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Cart
-                        </NavLink>
-                      </li>
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/wishlist"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Wishlist
-                        </NavLink>
-                      </li>
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/checkout"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Checkout{" "}
-                        </NavLink>
-                      </li>
 
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/become-seller"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Become Seller
-                        </NavLink>
-                      </li>
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/account"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Account
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
                   <li className="on-hover-item nav-menu__item has-submenu">
                     <span className="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">
                       New
@@ -808,43 +690,6 @@ const HeaderOne = () => {
                           Vendors
                         </NavLink>
                       </li>
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/vendor-details"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendor Details
-                        </NavLink>
-                      </li>
-                      <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/vendor-two"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendors Two
-                        </NavLink>
-                      </li>
-
-                      {/* <li className="common-dropdown__item nav-submenu__item">
-                        <NavLink
-                          to="/vendor-two-details"
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendors Two Details
-                        </NavLink>
-                      </li> */}
                     </ul>
                   </li>
 

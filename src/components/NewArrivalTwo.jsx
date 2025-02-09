@@ -360,12 +360,12 @@ const NewArrivalTwo = () => {
                   to="/product-details"
                   className="product-card__thumb flex-center"
                 >
-                  <img src="assets/images/thumbs/product-img12.png" alt="" />
+                  <img src="assets/images/thumbs/product-img001.jpg" alt="" />
                 </Link>
                 <div className="product-card__content p-sm-2">
                   <h6 className="title text-lg fw-semibold mt-12 mb-8">
                     <Link to="/product-details" className="link text-line-2">
-                      Nature Valley Whole Grain Oats and Honey Protein
+                      Beads bag
                     </Link>
                   </h6>
                   <div className="flex-align gap-4">
@@ -414,12 +414,12 @@ const NewArrivalTwo = () => {
                   to="/product-details"
                   className="product-card__thumb flex-center"
                 >
-                  <img src="assets/images/thumbs/product-img10.png" alt="" />
+                  <img src="assets/images/thumbs/product-img100.jpg" alt="" />
                 </Link>
                 <div className="product-card__content p-sm-2">
                   <h6 className="title text-lg fw-semibold mt-12 mb-8">
                     <Link to="/product-details" className="link text-line-2">
-                      Whole Grains and Seeds Organic Bread
+                      Mens
                     </Link>
                   </h6>
                   <div className="flex-align gap-4">
