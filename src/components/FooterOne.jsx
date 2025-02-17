@@ -15,7 +15,7 @@ const FooterOne = () => {
             <div className="footer-item__logo">
               <Link to="/">
                 {" "}
-                <img src="assets/images/logo/logo.png" alt="" />
+                <img src="assets/images/logo/logo.png" alt="logo" />
               </Link>
             </div>
             <p className="mb-24">
@@ -143,12 +143,12 @@ const FooterOne = () => {
                 </Link>
               </li>
               <li className="mb-16">
-                <Link to="/shop" className="text-gray-600 hover-text-main-600">
+                <Link to="/cart" className="text-gray-600 hover-text-main-600">
                   Order History
                 </Link>
               </li>
               <li className="mb-16">
-                <Link to="/shop" className="text-gray-600 hover-text-main-600">
+                <Link to="/cart" className="text-gray-600 hover-text-main-600">
                   Shoping Cart
                 </Link>
               </li>
